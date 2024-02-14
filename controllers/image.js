@@ -1,7 +1,7 @@
 const setupClarify = (imgURL) => {
-  const PAT = "YOUR_CLARIFY_KEY";
-  const USER_ID = "YOUR_CLARIFAI_ID";
-  const APP_ID = "YOUR_APP_ID";
+  const PAT = "4d7976a20c164c618422ea8323dfb934";
+  const USER_ID = "danielmuszkiet";
+  const APP_ID = "SmartBrain";
   const IMAGE_URL = imgURL;
 
   const raw = JSON.stringify({
@@ -41,7 +41,7 @@ export const handleApiCall = (req, res) => {
     .then((response) => {
       res.json(response.outputs[0].data.regions);
     })
-    .catch((err) => res.status(400).json("check URL"));
+    .catch((err) => res.status(400).json(err.message));
 };
 
 export const handleImage = (db) => (req, res) => {

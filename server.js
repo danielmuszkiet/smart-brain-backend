@@ -7,11 +7,14 @@ import { handleSignin } from "./controllers/signin.js";
 import { handleImage, handleApiCall } from "./controllers/image.js";
 import { handleProfileGet } from "./controllers/profile.js";
 
+const PORT = process.env.PORT;
+console.log(process.env);
+
 const db = knex({
   client: "pg",
   connection: {
     host: "127.0.0.1",
-    user: "YOUR_DB_NAME",
+    user: "danielmuszkiet",
     port: 5432,
     password: "",
     database: "smart-brain",
@@ -40,6 +43,6 @@ app.put("/image", handleImage(db));
 
 app.post("/imageurl", handleApiCall);
 
-app.listen(3000, () => {
-  console.log("app is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`app is running on port ${PORT}`);
 });
