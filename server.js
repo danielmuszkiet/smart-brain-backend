@@ -13,7 +13,7 @@ console.log("Das ist ein Test");
 const db = knex({
   client: "pg",
   connection: {
-    host: "N0T6GredMQd4JM96yXe9yegizglbzrsP@dpg-cn6cdsgl5elc73flro0g-a",
+    host: "dpg-cn6cdsgl5elc73flro0g-a",
     user: "smartbraindb_66ot_user",
     port: 5432,
     password: "N0T6GredMQd4JM96yXe9yegizglbzrsP",
