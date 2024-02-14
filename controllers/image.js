@@ -1,7 +1,7 @@
 const setupClarify = (imgURL) => {
-  const PAT = "16d7377fac624abfa9ad3b0799204696";
-  const USER_ID = "danielmuszkiet";
-  const APP_ID = "SmartBrain";
+  const PAT = "YOUR_CLARIFY_KEY";
+  const USER_ID = "YOUR_CLARIFAI_ID";
+  const APP_ID = "YOUR_APP_ID";
   const IMAGE_URL = imgURL;
 
   const raw = JSON.stringify({
