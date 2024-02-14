@@ -8,7 +8,8 @@ import { handleImage, handleApiCall } from "./controllers/image.js";
 import { handleProfileGet } from "./controllers/profile.js";
 
 const PORT = process.env.PORT;
-
+console.log(PORT);
+console.log("Das ist ein Test");
 const db = knex({
   client: "pg",
   connection: {
