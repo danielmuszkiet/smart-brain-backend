@@ -1,7 +1,7 @@
 const setupClarify = (imgURL) => {
-  const PAT = "4d7976a20c164c618422ea8323dfb934";
-  const USER_ID = "danielmuszkiet";
-  const APP_ID = "SmartBrain";
+  const PAT = process.env.CLARIFY_PAT;
+  const USER_ID = process.env.CLARIFY_USER_ID;
+  const APP_ID = process.env.CLARIFY_APP_ID;
   const IMAGE_URL = imgURL;
 
   const raw = JSON.stringify({
