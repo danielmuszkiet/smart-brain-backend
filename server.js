@@ -9,7 +9,6 @@ import { handleProfileGet } from "./controllers/profile.js";
 
 const PORT = process.env.PORT;
 console.log(PORT);
-console.log("Das ist ein Test");
 const db = knex({
   client: "pg",
   connection: process.env.DATABASE_URL,
